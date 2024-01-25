@@ -1,6 +1,6 @@
 <template>
 
-<div class="container">
+<div class="container w-100">
 
   <div class="bg-light rounded-3 mt-3 p-2">
     <h2 class=" text-start ms-3"><b>Projects</b></h2>
