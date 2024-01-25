@@ -6,7 +6,7 @@ import Nav from './components/Nav.vue'
 
 <template>
   <Nav />
-  <div class="wrapper d-flex justify-content-center w-100">
+  <div class="wrapper d-flex justify-content-center">
   <router-view class="rw" v-slot="{Component}">
   <transition name="fade" mode="out-in">
     <component :is="Component" />
