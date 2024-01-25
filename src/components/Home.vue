@@ -2,7 +2,7 @@
     <div class="bg-light mt-3 py-4 rounded-3">
       <h2 class="text-start ms-3"><b>Double</b><b class="text-muted">M</b></h2>
 
-      <div class="bg-light d-flex align-items-left flex-column">
+      <div class="bg-light d-flex align-items-left flex-column w-75">
         <article>
           <p class="p-3">In a digital era where users access websites from a myriad of devices, I am dedicated to
             delivering responsive and visually appealing web solutions. Let's collaborate to bring your digital vision
