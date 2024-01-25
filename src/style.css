@@ -1,0 +1,68 @@
+body {
+  background: rgb(23, 23, 23);
+  margin: 0;
+}
+.myHero {
+  height: 18em;
+  background-image: url(/src/assets/mohammad-rahmani-0JvWk8ox_rQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading1 {
+  color: rgba(119, 118, 116, 0.3);
+  font-size: 8rem;
+}
+.text-color {
+  color: rgb(150, 150, 150);
+}
+
+.card {
+  width: 15rem;
+}
+
+.myButton:hover {
+  background-color: rgb(59, 58, 58);
+}
+
+.myText {
+  font-size: x-small;
+  color: grey;
+  text-align: center;
+}
+.myImg {
+  max-height: 200px;
+  margin: 0;
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+  transition: 0.5s ease-in-out;
+}
+.myImg:hover {
+  -webkit-transform: rotate(2deg) scale(1.2);
+  transform: rotate(2deg) scale(1.2);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.gitSvg,
+.linkedin,
+.facebook {
+  height: 32px;
+}
+.icoBtn {
+  width: 6rem;
+}
+
+#myNotice {
+  display: none;
+}
+#mySplash {
+  position: absolute;
+  top: 5em;
+  left: 40%;
+  border: 1px solid rgba(247, 245, 245, 0.5);
+  border-radius: 10px;
+  width: 15em;
+}
