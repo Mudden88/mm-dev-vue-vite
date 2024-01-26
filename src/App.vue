@@ -15,6 +15,13 @@ import Nav from './components/Nav.vue'
 </div>
 </template>
 <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 .rw {
   margin: 0 1em 1em 1em;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5)

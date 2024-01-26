@@ -1,43 +1,41 @@
+<script setup>
+
+//Toggle menu to "unCollapse" when link clicked
+
+import { ref } from 'vue';
+const isCollapseOpen = ref(false);
+const handleToggleCollapse = () => {
+  isCollapseOpen.value = !isCollapseOpen.value;
+};
+
+const handleRouterLinkClick = () => {
+  isCollapseOpen.value = false;
+};
+</script>
 
 <template>
-  <nav class=" sticky-top navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-  <div class="container-fluid">
-    <router-link to="/" id="index" class="navbar-brand"><b>Double</b><b class="text-color">M</b></router-link>
-    <button type="button" id="navButton" class="navbar-toggler" data-bs-toggle="collapse"
-      data-bs-target="#navbarCollapse">
+  <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+    <div class="container-fluid">
+      <router-link to="/" id="index" class="navbar-brand"><b>Double</b><b class="text-color">M</b></router-link>
+      <button type="button" class="navbar-toggler" @click="handleToggleCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <span class="navbar-toggler-icon">
-      </span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav">
-
-        <li><router-link to="/" id="navlink" class="nav-item nav-link">Home</router-link></li>
-        <li><router-link to="/About" id="navlink" class="nav-item nav-link">About</router-link></li>
-        <li><router-link to="/Projects" id="navlink" class="nav-item nav-link">Projects</router-link></li>
-        <li><router-link to="/Contact" class="nav-item nav-link">Contact</router-link></li>
-
+      <div :class="{ 'collapse': !isCollapseOpen, 'navbar-collapse': true }">
+        <div class="navbar-nav">
+          <li><router-link to="/" id="navlink" class="nav-item nav-link" @click="handleRouterLinkClick">Home</router-link></li>
+          <li><router-link to="/About" id="navlink" class="nav-item nav-link" @click="handleRouterLinkClick">About</router-link></li>
+          <li><router-link to="/Projects" id="navlink" class="nav-item nav-link" @click="handleRouterLinkClick">Projects</router-link></li>
+          <li><router-link to="/Contact" class="nav-item nav-link" @click="handleRouterLinkClick">Contact</router-link></li>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="myHero">
-    <h1 class="text-light"><b class="firstH">FULLSTACK</b><b class="text-color">DEVELOPER</b>
-      <p class="myText">student
-      </p>
+  <div class="myHero">
+    <h1 class="text-light">
+      <b class="firstH">FULLSTACK</b><b class="text-color">DEVELOPER</b>
+      <p class="myText">student</p>
     </h1>
   </div>
 </template>
-
-
-<script>
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarCollapse')
-const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle)
-navLinks.forEach((l) => {
-  l.addEventListener('click', () => { bsCollapse.toggle()})
-})
-
-</script>
