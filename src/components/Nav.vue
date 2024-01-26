@@ -30,3 +30,14 @@
     </h1>
   </div>
 </template>
+
+
+<script>
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarCollapse')
+const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle)
+navLinks.forEach((l) => {
+  l.addEventListener('click', () => { bsCollapse.toggle()})
+})
+
+</script>
