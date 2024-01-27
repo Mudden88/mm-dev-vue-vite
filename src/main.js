@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import './style.css'
@@ -13,23 +13,15 @@ import Contact from './components/Contact.vue'
 const app = createApp(App)
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
-    { path: '/', component: Home, beforeEnter: captureRoute },
-    { path: '/About', component: About, beforeEnter: captureRoute },
-    { path: '/Projects', component: Projects, beforeEnter: captureRoute },
-    { path: '/Contact', component: Contact, beforeEnter: captureRoute }
+    { path: '/', component: Home },
+    { path: '/About', component: About },
+    { path: '/Projects', component: Projects },
+    { path: '/Contact', component: Contact }
   ]
 })
 
-function captureRoute(to, from, next) {
-  const newPath = to.path
-  const oldPath = from.path
-
-  next()
-
-}
-router.beforeEach(captureRoute)
 
 app.use(router)
 app.mount('#app')
