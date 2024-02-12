@@ -1,6 +1,15 @@
+<script setup>
+
+import Contactform from './Contactform.vue';
+
+</script>
+
 <template>
   <div class="container">
+
     <div class="bg-light mt-3 mb-3 rounded-3" style="min-height: 40vh;">
+
+      <Contactform />
 
       <h2 class=" text-start ms-3"><b>My</b><b class="text-muted">Socials</b></h2>
 
@@ -15,7 +24,10 @@
             <p class="mb-0">Github</p>
           </button>
         </a>
+
       </div>
+
+
     </div>
   </div>
 </template>
