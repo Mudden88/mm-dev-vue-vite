@@ -3,7 +3,6 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import './style.css'
-import 'bootstrap'
 import App from './App.vue'
 import About from './components/About.vue'
 import Home from './components/Home.vue'
@@ -21,7 +20,6 @@ const router = createRouter({
     { path: '/Contact', component: Contact }
   ]
 })
-
 
 app.use(router)
 app.mount('#app')
