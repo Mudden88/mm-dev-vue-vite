@@ -5,7 +5,11 @@ import Nav from './components/Nav.vue'
 </script>
 
 <template>
+//Navbar and hero img inside <Nav /> tag.
   <Nav />
+
+//Router-view with transition for change of content
+
   <div class="wrapper d-flex justify-content-center">
   <router-view class="rw" v-slot="{Component}">
   <transition name="fade" mode="out-in">
