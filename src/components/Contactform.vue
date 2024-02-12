@@ -6,21 +6,28 @@ export default {
     return {
       user_name: '',
       user_email: '',
-      user_message: ''
+      user_message: '',
+      to_name: 'Martin'
     }
   },
   methods: {
     sendEmail() {
-      const form = document.querySelector('.formFields')
       emailjs
-        .sendForm(
+        .send(
           "service_lsa6g3k",
           "template_zdsip6k",
-          form,
-          "S8vGnw8J7SRCu_DFe"
+          {
+            user_name: this.user_name,
+            to_name: this.to_name,
+            user_message: this.user_message,
+            user_email: this.user_email
+
+          },
+          "S8vGnw8J7SRCu_DFe",
+
         )
         .then((result) => {
-          alert("Email successfully sent", result.text)
+          alert("Email successfully sent, you may now close this window.", result.text)
 
           this.user_name = ''
           this.user_email = ''
@@ -40,7 +47,7 @@ export default {
   <p class="ms-3">Fill out this form below to get in touch with me. I'll reply as soon as possible.</p>
   <div class="contact-container ms-3 py-3">
 
-    <form action="" class="formFields" @submit.prevent="sendEmail">
+    <form action="" class="formFields" @submit.prevent="sendEmail" id="contactForm">
       <div class="name-fields">
         <div class="field">
           <input type="text" v-model="user_name" placeholder="Name" />
