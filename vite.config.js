@@ -12,5 +12,5 @@ export default defineConfig({
     })
 
   ],
-  base: '/mm-dev-vite-vue/'
+  base: "/mm-dev-vue-vite/"
 })
