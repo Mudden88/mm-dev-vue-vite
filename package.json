@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mudden88.github.io/mm-dev-vue-vite/",
+  "homepage": "https://mudden88.github.io/mm-dev-vue-vite/#/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
