@@ -23,10 +23,14 @@ const handleRouterLinkClick = () => {
 
       <div :class="{ 'collapse': !isCollapseOpen, 'navbar-collapse': true }">
         <div class="navbar-nav">
-          <li><router-link to="/" id="navlink" class="nav-item nav-link" @click="handleRouterLinkClick">Home</router-link></li>
-          <li><router-link to="/About" id="navlink" class="nav-item nav-link" @click="handleRouterLinkClick">About</router-link></li>
-          <li><router-link to="/Projects" id="navlink" class="nav-item nav-link" @click="handleRouterLinkClick">Projects</router-link></li>
-          <li><router-link to="/Contact" class="nav-item nav-link" @click="handleRouterLinkClick">Contact</router-link></li>
+          <li><router-link to="/" id="navlink" class="nav-item nav-link" @click="handleRouterLinkClick">Home</router-link>
+          </li>
+          <li><router-link to="/About" id="navlink" class="nav-item nav-link"
+              @click="handleRouterLinkClick">About</router-link></li>
+          <li><router-link to="/Projects" id="navlink" class="nav-item nav-link"
+              @click="handleRouterLinkClick">Projects</router-link></li>
+          <li><router-link to="/Contact" class="nav-item nav-link" @click="handleRouterLinkClick">Contact</router-link>
+          </li>
         </div>
       </div>
     </div>
@@ -35,7 +39,5 @@ const handleRouterLinkClick = () => {
   <div class="myHero">
     <h1 class="text-light">
       <b class="firstH">FULLSTACK</b><b class="text-color">DEVELOPER</b>
-      <p class="myText">student</p>
     </h1>
-  </div>
-</template>
+</div></template>

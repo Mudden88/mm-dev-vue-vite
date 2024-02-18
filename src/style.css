@@ -22,28 +22,9 @@ body {
 .card {
   width: 15rem;
 }
-
-.myButton:hover {
-  background-color: rgb(59, 58, 58);
-}
-
-.myText {
-  font-size: x-small;
-  color: grey;
-  text-align: center;
-}
 .myImg {
   max-height: 200px;
   margin: 0;
-  -webkit-transform: rotate(0) scale(1);
-  transform: rotate(0) scale(1);
-  transition: 0.5s ease-in-out;
-}
-.myImg:hover {
-  -webkit-transform: rotate(2deg) scale(1.2);
-  transform: rotate(2deg) scale(1.2);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
 .gitSvg,
