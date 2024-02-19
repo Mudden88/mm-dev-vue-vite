@@ -39,7 +39,7 @@ export default {
           this.user_message = ''
         },
           (error) => {
-            alert('Failed to send', error.text)
+            this.toast.error('Failed to send', error.text)
           }
         )
     }
