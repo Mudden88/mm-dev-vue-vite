@@ -32,7 +32,7 @@ export default {
 
         )
         .then((result) => {
-          if (this.user_name != '' || this.user_email != '') {
+          if (this.user_name != '' && this.user_email != '') {
 
             this.toast.success('Email Successfully Sent', result.text)
 
@@ -40,7 +40,7 @@ export default {
             this.user_email = ''
             this.user_message = ''
           } else {
-            this.toast.error('Name and/or email cannot be blank')
+            this.toast.error('Name and email cannot be blank')
           }
         }
         )
