@@ -1,7 +1,9 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
+import Toast from 'vue-toastification'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
+import 'vue-toastification/dist/index.css'
 import './style.css'
 import App from './App.vue'
 import About from './components/About.vue'
@@ -21,5 +23,7 @@ const router = createRouter({
   ]
 })
 
+
 app.use(router)
+app.use(Toast)
 app.mount('#app')

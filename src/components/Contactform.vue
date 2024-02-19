@@ -1,7 +1,12 @@
 <script>
 import emailjs from 'emailjs-com'
+import { useToast } from 'vue-toastification'
 
 export default {
+  setup() {
+    const toast = useToast()
+    return { toast }
+  },
   data() {
     return {
       user_name: '',
@@ -27,7 +32,7 @@ export default {
 
         )
         .then((result) => {
-          alert("Email successfully sent, you may now close this window.", result.text)
+          this.toast.success('Email Successfully Sent', result.text)
 
           this.user_name = ''
           this.user_email = ''
