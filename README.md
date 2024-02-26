@@ -1,7 +1,7 @@
 # MM-Dev-Vue-Vite
 
-### - [Website](https://mudden88.github.io/mm-dev-vue-vite/)
+### - [Website](https://mudden88.github.io/#/)
 
-### - Portfolio'ish' SPA made with Vue.js and Bootstrap.
+### - Portfolio SPA made with Vue.js and Bootstrap.
 
 ### - MIT License
