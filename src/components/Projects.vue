@@ -46,7 +46,7 @@
             <h5 class="card-title">DoubleM</h5>
             <p class="card-text">My personal portfolio website,
               made with Vue.js and Vue-Bootstrap. </p>
-            <a href="https://mm-dev.se"><button class="btn btn-dark myButton">View more</button></a>
+            <a href="https://mudden88.github.io"><button class="btn btn-dark myButton">View more</button></a>
           </div>
         </div>
         <div class="card mt-3 me-3 pb-5">

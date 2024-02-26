@@ -11,6 +11,5 @@ export default defineConfig({
       resolvers: [BootstrapVueNextResolver()]
     })
 
-  ],
-  base: "/mm-dev-vue-vite/"
+  ]
 })
