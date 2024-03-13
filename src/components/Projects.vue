@@ -5,6 +5,19 @@
       <h2 class=" text-start ms-3"><b>Projects</b></h2>
       <div class="bg-light rounded-3 mt-3 p-4 d-flex flex-wrap justify-content-center">
 
+
+        <div class="card mt-3 pb-5 me-3">
+          <img src="/src/assets/quizathon.png" class="card-img-top p-2" alt="">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Quizathon</h5>
+            <p class="card-text">Group project made with vue.js, click button to get to my GitHub for details</p>
+
+            <a href="https://github.com/Mudden88/Quizathon-Grupp12" target="_blank"><button
+                class="btn btn-dark myButton">View
+                more</button></a>
+          </div>
+        </div>
+
         <div class="card mt-3 pb-5 me-3">
           <img src="/src/assets/bp_karta.png" class="card-img-top p-2" alt="">
           <div class="card-body d-flex flex-column">
