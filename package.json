@@ -6,7 +6,7 @@
   "homepage": "https://mudden88.github.io/mm-dev-vue-vite/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "render -d dist",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
